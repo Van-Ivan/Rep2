@@ -10,18 +10,18 @@ namespace Lab1.Проверка_на_високосность
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите целое положительное число");
+            Console.WriteLine("Введите целое не отрицательное число");
             int num = Convert.ToInt32(Console.ReadLine());
 
             if (num % 4 == 0)
             {
                 if ((num % 100 == 0) && (num % 400 != 0))
-                    Console.WriteLine("Не високосный");
+                    Console.WriteLine("Не високосный год");
                 else
-                    Console.WriteLine("Високосный");
+                    Console.WriteLine("Високосный год");
             }
             else
-                Console.WriteLine("Не високосный");
+                Console.WriteLine("Не високосный год");
             Console.ReadLine();
         }
     }
